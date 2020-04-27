@@ -9,178 +9,220 @@
 
     <Button
         android:id="@+id/button15"
-        android:layout_width="0dp"
-        android:layout_height="40dp"
-        android:layout_marginEnd="25dp"
-        android:layout_marginBottom="42dp"
+        android:layout_width="161dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="21dp"
         android:backgroundTint="#FFEB3B"
-        android:text="ACEPTAR"
+        android:text="INICIO"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button16"
-        app:layout_constraintStart_toEndOf="@+id/button14" />
-
-    <EditText
-        android:id="@+id/editText20"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="10dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/editText22"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <EditText
-        android:id="@+id/editText21"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="46dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/editText20"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView32" />
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="144dp"
-        android:layout_height="142dp"
+        android:layout_width="141dp"
+        android:layout_height="0dp"
         android:layout_marginTop="68dp"
+        android:layout_marginBottom="58dp"
+        app:layout_constraintBottom_toTopOf="@+id/nombreT"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_person_black_24dp" />
 
     <TextView
+        android:id="@+id/direccionT"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="58dp"
+        android:layout_marginBottom="27dp"
+        android:text="no"
+        android:textColor="#FFEB3B"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView32"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView31"
+        app:layout_constraintTop_toBottomOf="@+id/enfermedadT" />
+
+    <TextView
+        android:id="@+id/pesoT"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="103dp"
+        android:layout_marginBottom="74dp"
+        android:text="2"
+        android:textColor="#FFEB3B"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/button15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView32"
+        app:layout_constraintTop_toTopOf="@+id/textView31" />
+
+    <TextView
+        android:id="@+id/enfermedadT"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="17dp"
+        android:text="nel"
+        android:textColor="#9C27B0"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/direccionT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/emailT2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginEnd="9dp"
+        android:text="Enfermedad::"
+        android:textColor="#9C27B0"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/enfermedadT"
+        app:layout_constraintEnd_toStartOf="@+id/enfermedadT"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/apellidoT"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="21dp"
+        android:text="s"
+        android:textColor="#9C27B0"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView29"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView28"
+        app:layout_constraintTop_toBottomOf="@+id/nombreT" />
+
+    <TextView
+        android:id="@+id/nombreT"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="18dp"
+        android:text="a"
+        android:textColor="#9C27B0"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/apellidoT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView27"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/emailT2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="8dp"
+        android:text="email"
+        android:textColor="#9C27B0"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/enfermedadT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView30"
+        app:layout_constraintTop_toBottomOf="@+id/textView29" />
+
+    <TextView
         android:id="@+id/textView27"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:text="Nombres"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="17dp"
+        android:text="Nombres:"
         android:textColor="#9C27B0"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView28"
-        app:layout_constraintEnd_toEndOf="@+id/textView28" />
+        app:layout_constraintEnd_toStartOf="@+id/nombreT"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/nombreT" />
 
     <TextView
-        android:id="@+id/textView28"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="19dp"
-        android:text="Apellidos"
+        android:id="@+id/edadT"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="133dp"
+        android:text="2"
         android:textColor="#9C27B0"
-        android:textSize="18sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/editText15"
-        app:layout_constraintEnd_toStartOf="@+id/editText15" />
-
-    <TextView
-        android:id="@+id/textView29"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="Edad"
-        android:textColor="#9C27B0"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="@+id/textView28"
-        app:layout_constraintTop_toBottomOf="@+id/textView28" />
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView29"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView29" />
 
     <TextView
         android:id="@+id/textView30"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="7dp"
-        android:layout_marginBottom="23dp"
-        android:text="Email"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="23dp"
+        android:text="Email:"
         android:textColor="#9C27B0"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView31"
-        app:layout_constraintStart_toStartOf="@+id/textView31" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/emailT2"
+        app:layout_constraintEnd_toStartOf="@+id/emailT2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="22dp"
+        android:text="Edad:"
+        android:textColor="#9C27B0"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/emailT2"
+        app:layout_constraintEnd_toStartOf="@+id/edadT"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/apellidoT" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginEnd="24dp"
+        android:text="Apellidos:"
+        android:textColor="#9C27B0"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/apellidoT"
+        app:layout_constraintEnd_toStartOf="@+id/apellidoT"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView31"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="22dp"
-        android:layout_marginBottom="5dp"
-        android:text="Direccion"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="15dp"
+        android:text="Direccion:"
         android:textColor="#FFEB3B"
         android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="@+id/editText23"
-        app:layout_constraintEnd_toStartOf="@+id/editText23" />
+        app:layout_constraintEnd_toStartOf="@+id/direccionT"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/direccionT" />
 
     <TextView
         android:id="@+id/textView32"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="26dp"
-        android:text="Peso"
+        android:layout_marginStart="88dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="35dp"
+        android:text="Peso:"
         android:textColor="#FFEB3B"
         android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="@+id/textView31"
-        app:layout_constraintTop_toBottomOf="@+id/textView31" />
+        app:layout_constraintBottom_toTopOf="@+id/button15"
+        app:layout_constraintEnd_toStartOf="@+id/pesoT"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/direccionT" />
 
-    <EditText
-        android:id="@+id/editText15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintStart_toStartOf="@+id/editText21"
-        app:layout_constraintTop_toBottomOf="@+id/editText21" />
-
-    <EditText
-        android:id="@+id/editText22"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="2dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/editText23"
-        app:layout_constraintEnd_toEndOf="@+id/editText23" />
-
-    <EditText
-        android:id="@+id/editText23"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="26dp"
-        android:layout_marginBottom="180dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <EditText
-        android:id="@+id/editText24"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="2dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintStart_toStartOf="@+id/editText23"
-        app:layout_constraintTop_toBottomOf="@+id/editText23" />
-
-    <Button
-        android:id="@+id/button14"
-        android:layout_width="0dp"
-        android:layout_height="38dp"
-        android:layout_marginStart="63dp"
-        android:layout_marginEnd="30dp"
-        android:backgroundTint="#FFEB3B"
-        android:text="EDITAR"
-        app:layout_constraintBaseline_toBaselineOf="@+id/button15"
-        app:layout_constraintEnd_toStartOf="@+id/button15"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/button16"
-        android:layout_width="0dp"
-        android:layout_height="42dp"
-        android:layout_marginEnd="24dp"
-        android:backgroundTint="#FFEB3B"
-        android:text="CERRAR"
-        app:layout_constraintBaseline_toBaselineOf="@+id/button15"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button15" />
 </androidx.constraintlayout.widget.ConstraintLayout>
