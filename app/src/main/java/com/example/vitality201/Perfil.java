@@ -47,51 +47,17 @@ public class Perfil extends AppCompatActivity {
         Tenfermedad.setText(Enfermedad);
         String email=getIntent().getStringExtra("email");
         Temail.setText(email);
-        String Edad= getIntent().getStringExtra("edad");
-        Tedad.setText(Edad);
-        String Peso= getIntent().getStringExtra("peso");
-        Tpeso.setText(Peso);
-
-
+        int Edad=getIntent().getIntExtra("edad",1);
+        Tedad.setText(Edad +" Años");
+        int Peso= getIntent().getIntExtra("peso",1);
+        Tpeso.setText(Peso +" Kg");
 
 
         mReference = FirebaseDatabase.getInstance().getReference();
-        mReference.child("Usuarios").addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-
-/*
-                if (dataSnapshot.exists()) {
-                    String Dnombre = dataSnapshot.child("nombre").getValue().toString();
-
-                    Tnombre.setText(Dnombre);
-                    String Dapellido = dataSnapshot.child("apellido").getValue().toString();
-                    Tapellido.setText(Dapellido);
-                    String Ddireccion = dataSnapshot.child("direccion").getValue().toString();
-                    Tdireccion.setText(Ddireccion);
-                    String Demail = dataSnapshot.child("email").getValue().toString();
-                    Temail.setText(Demail);
-                    String Denfermedad = dataSnapshot.child("enfermedad").getValue().toString();
-                    Tenfermedad.setText(Denfermedad);
-                    int Dedad = Integer.parseInt(dataSnapshot.child("edad").getValue().toString());
-                    Tedad.setText(Dedad);
-                    int Dpeso = Integer.parseInt(dataSnapshot.child("peso").getValue().toString());
-                    Tpeso.setText(Dpeso);
-
-                }*/
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
-
-            }
-        });
-
-
 
         btn2.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                startActivity(new Intent(Perfil.this, menu.class));
+                startActivity(new Intent(Perfil.this, MainActivity.class));
 
             }
         });

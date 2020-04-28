@@ -13,7 +13,7 @@
         android:layout_height="0dp"
         android:layout_marginBottom="21dp"
         android:backgroundTint="#FFEB3B"
-        android:text="INICIO"
+        android:text="CERRAR SESIÓN"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

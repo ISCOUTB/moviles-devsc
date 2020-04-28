@@ -29,8 +29,8 @@ public class registro extends AppCompatActivity {
     private String nombre;
     private String apellido;
     private String enfermedad;
-    private int peso;
-    private int edad;
+    public int peso;
+    public int edad;
     private String direccion;
     private  String email;
     private  String pass;
